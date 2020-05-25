@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(184, 195, 207, 0.863);
+    padding: 55px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 650px;
+    width: 955px;
+    background-color: #f3f3f3;
+    background-image: url(bg-top.svg), url(bg-bottom.svg);
+    background-size: 30%, 30%;
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-position-x: right, left;
+}
+
+.container__button {
+    padding-top: 40px;
+}
+
+.container__button h1 {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(60, 63, 101, 0.99);
+}
+
+.container__button p {
+    font-size: 14px;
+    padding: 15px;
+    border: 0;
+    margin: 0;
+}
+
+#switch {
+    display: none; 
+}
+
+#switch:checked + .container__button label {
+    justify-content: flex-end;
+}
+
+#buttontop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(20, 23, 74, 0.5);
+    font-weight: 700;
+}
+
+.container__switch {
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    display: flex;
+    border-radius: 25px;
+    justify-content: flex-start;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.container__switch-button {
+    display: block;
+    background-color: white;
+    height: 95%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+.container__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 750px;
+    height: 335px;
+    margin-left: 100px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    box-shadow: 3px 3px 10px 5px rgba(204, 156, 248, 0.103);
+    font-weight: bold;
+    color: rgba(60, 63, 101, 0.99);
+}
+
+.container__card p {
+    border-bottom: 1px solid rgba(162, 108, 212, 0.3);
+    margin: 0;
+}
+
+.container__card p:not(.price) {
+    height: 45px;
+    line-height: 45px;
+}
+
+.container__card--two p {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    height: 26.78px;
+    font-size: 12px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.price small {
+    font-size: 50%;
+}
+
+.container__card button:focus {
+    outline: none;
+}
+
+.container__card button:active {
+    filter: brightness(70%);
+}
+
+.container__card button {
+    margin-top: 17px;
+    height: 35px;
+    width: 100%;
+}
+
+.btn-blue {
+    background: linear-gradient(90deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    LETTER-SPACING: 0.5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn-blue:hover,
+.btn-white:hover {
+    filter: brightness(90%);
+
+}
+
+.btn-white {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    color: #6767c7;
+    font-weight: bold;
+    LETTER-SPACING: 0.5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.container__card--one {
+    height: 335px;
+    width: 250px;
+    padding: 20px;
+    font-size: 12px;  
+}
+
+.container__card--two {
+    height: 362px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    background: linear-gradient(150deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #ffffff;
+    font-size: 12px;  
+}
+
+.container__card--three {
+    height: 335px;
+    padding: 20px;
+    width: 250px;
+    font-size: 12px;  
+}
