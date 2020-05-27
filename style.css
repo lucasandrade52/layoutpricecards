@@ -6,25 +6,31 @@ body {
     background-color: rgba(184, 195, 207, 0.863);
     padding: 55px;
     font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    margin: none;
+    border: none;
 }
 
 .container {
-    height: 650px;
+    height: 600px;
     width: 955px;
+    margin-left: 140px;
+    margin-right: 140px;
     background-color: #f3f3f3;
     background-image: url(bg-top.svg), url(bg-bottom.svg);
-    background-size: 30%, 30%;
+    background-size: 270px, 190px;
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-position-x: right, left;
 }
 
 .container__button {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .container__button h1 {
     text-align: center;
+    margin: 20px;
     font-size: 25px;
     color: rgba(60, 63, 101, 0.99);
 }
@@ -71,6 +77,9 @@ body {
     border-radius: 50%;
 }
 
+.container__switch-button:hover {
+    cursor: pointer;
+}
 
 .container__group {
     display: flex;
@@ -79,8 +88,8 @@ body {
     text-align: center;
     width: 750px;
     height: 335px;
-    margin-left: 100px;
-    margin-top: 60px;
+    margin-left: 110px;
+    margin-top: 50px;
     background-color: #ffffff;
     border-radius: 5px;
     letter-spacing: 0.5px;
@@ -189,4 +198,309 @@ h2 {
     padding: 20px;
     width: 250px;
     font-size: 12px;  
+}
+
+/* modal */
+
+#modal__professional{
+    background: linear-gradient(150deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    padding: 12px;
+    font-size: 12px;
+    position: fixed;
+    height: 550px;
+    width: 330px;
+    bottom: 35px;
+    left: 500px;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 5px rgba(204, 156, 248, 0.103);
+}
+
+#modal__basic {
+    background: linear-gradient(150deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    padding: 12px;
+    font-size: 12px;
+    position: fixed;
+    height: 550px;
+    width: 330px;
+    bottom: 35px;
+    left: 190px;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 5px rgba(204, 156, 248, 0.103);
+}
+
+#modal__master {
+    background: linear-gradient(150deg, rgba(163,168,240,1) 17%, rgba(105,111,221,1) 77%);
+    padding: 12px;
+    font-size: 12px;
+    position: fixed;
+    height: 550px;
+    width: 330px;
+    bottom: 35px;
+    left: 785px;
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 5px rgba(204, 156, 248, 0.103);
+}
+
+#modal__professional {
+    color: white;
+    text-align: justify;
+}
+
+#modal__basic {
+    color: white;
+    text-align: justify;
+}
+
+#modal__master .content-profissional {
+    color: white;
+    text-align: justify;
+}
+
+#modal__professional .content-profissional img{
+    height:40px; 
+    width:40px;
+}
+
+#modal__basic .content-profissional img{
+    height:40px; 
+    width:40px;
+}
+
+#modal__master .content-profissional img {
+    height:40px; 
+    width:40px;
+}
+
+#modal__professional  .content-profissional h1 {
+    text-align: center;
+    margin-top: 0;
+    color:rgba(60, 63, 101, 0.99);   
+}
+
+#modal__basic .content-profissional h1 {
+    text-align: center;
+    margin-top: 0;
+    color:rgba(60, 63, 101, 0.99);   
+}
+
+#modal__master .content-profissional h1 {
+    text-align: center;
+    margin-top: 0;
+    color:rgba(60, 63, 101, 0.99);   
+}
+
+.modal__storage {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(60, 63, 101, 0.99);
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 0 75px 0
+}
+
+.modal__users {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(60, 63, 101, 0.99);
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 0 75px 0
+}
+
+.modal__send {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(60, 63, 101, 0.99);
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 0 65px 0
+}
+
+#modal__professional  .button__bottom {
+    display: flex;
+    padding: 20px 5px 5px 5px;
+    justify-content: space-between;
+}
+
+#modal__basic .button__bottom {
+    display: flex;
+    padding: 20px 5px 5px 5px;
+    justify-content: space-between;
+}
+
+#modal__master .button__bottom {
+    display: flex;
+    padding: 20px 5px 5px 5px;
+    justify-content: space-between;
+}
+
+#modal__professional .content-profissional a {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#modal__basic .content-profissional a {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#modal__master .content-profissional a {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#modal__professional .content-profissional a:hover {
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    text-decoration: none;
+}
+
+#modal__basic .content-profissional a:hover {
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    text-decoration: none;
+}
+
+#modal__master .content-profissional a:hover {
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    text-decoration: none;
+}
+
+#modal__professional .content-profissional button {
+    width: 100px;
+    height: 30px;
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+    border: 0;
+}
+
+#modal__basic .content-profissional button {
+    width: 100px;
+    height: 30px;
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+    border: 0;
+}
+
+#modal__master .content-profissional button {
+    width: 100px;
+    height: 30px;
+    background: rgb(243, 238, 238);
+    color: #6767c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 400ms;
+    border: 0;
+}
+
+#modal__professional .content-profissional button:hover {
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    text-decoration: none;
+
+}
+
+#modal__basic .content-profissional button:hover {
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    text-decoration: none;
+
+}
+
+#modal__master .content-profissional button:hover {
+    background-color: rgba(29, 25, 99, 0.37);
+    color: rgb(243, 238, 238);
+    text-decoration: none;
+
+}
+
+#modal__professional.hide { 
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal__basic.hide { 
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal__master.hide { 
+    opacity: 0;
+    visibility: hidden;
 }

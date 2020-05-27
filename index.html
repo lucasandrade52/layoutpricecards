@@ -16,47 +16,144 @@
         <div id="buttontop">
           <p>Annually</p>
         <label class="container__switch" for="switch">
-            <span class="container__switch-button"></span>
-          </label>
-            <p>Monthly</p>
-          </div>
+          <span class="container__switch-button"></span>
+        </label>
+          <p>Monthly</p>
+        </div>
     </section>
 
     <section class="container__group">
             
         <section class="container__card container__card--one">
           <h2 class="title">Basic</h2>
-            <p class="price"><small>$</small>19.99</p>
-            <p class="storage">500GB Storage</p>
-            <p class="users">2 User Allowed</p>
-            <p class="upload">Send Up 3GB</p>
-            <button type="button" class="btn-blue">LEARN MORE</button>
+          <p class="price"><small>$</small>19.99</p>
+          <p class="storage">500GB Storage</p>
+          <p class="users">2 User Allowed</p>
+          <p class="upload">Send Up 3GB</p>
+          <button type="button" class="btn-blue">LEARN MORE</button>
 
-          </section>
+        </section>
     
         <section class="container__card container__card--two">
           <h2 class="title">Professional</h2>
           <p class="price"><small>$</small>24.99</p>
           <p class="storage">1TB Storage</p>
-            <p class="users">5 User Allowed</p>
-            <p class="upload">Send Up 10GB</p>
-            <button type="button" class="btn-white">LEARN MORE</button>
+          <p class="users">5 User Allowed</p>
+          <p class="upload">Send Up 10GB</p>
+          <button type="button" class="btn-white">LEARN MORE</button>
         </section>
           
-          <section class="container__card container__card--three">
-            <h2 class="title">Master</h2>
-            <p class="price"><small>$</small>39.99</p>
-            <p class="storage">2TB Storage</p>
-            <p class="users">10 User Allowed</p>
-            <p class="upload">Send Up 20GB</p>
-            <button type="button" class="btn-blue">LEARN MORE</button>
+        <section class="container__card container__card--three">
+          <h2 class="title">Master</h2>
+          <p class="price"><small>$</small>39.99</p>
+          <p class="storage">2TB Storage</p>
+          <p class="users">10 User Allowed</p>
+          <p class="upload">Send Up 20GB</p>
+          <button type="button" class="btn-blue">LEARN MORE</button>
     
-          </section>
+        </section>
           
         </section>
         
       </section>
-      
+
+<!-- Modal -->
+<div id="modal__professional" class="hide">
+  <div class="content-profissional">
+    <h1>PROFESSIONAL</h1>
+
+    <div class="modal__storage">
+      <img src="https://image.flaticon.com/icons/png/512/2820/2820253.png" alt="cloud storage icon"><span>1TB</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+
+    <div class="modal__users">
+      <img src="https://image.flaticon.com/icons/svg/833/833342.svg" alt="Users icon"><span>5 USERS</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="modal__send">
+      <img src="https://image.flaticon.com/icons/svg/2810/2810448.svg" alt="send up cloud storage icon"><span>10 GB SEND</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="button__bottom">
+      <a href="#" class="voltar">Voltar</a>
+      <button type="button" class="btn-buy" href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">Buy Now</button>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div id="modal__basic" class="hide">
+  <div class="content-profissional">
+    <h1>BASIC</h1>
+
+    <div class="modal__storage">
+      <img src="https://image.flaticon.com/icons/png/512/2820/2820253.png" alt="cloud storage icon"><span>500GB</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+
+    <div class="modal__users">
+      <img src="https://image.flaticon.com/icons/svg/833/833342.svg" alt="Users icon"><span>2 USERS</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="modal__send">
+      <img src="https://image.flaticon.com/icons/svg/2810/2810448.svg" alt="send up cloud storage icon"><span>3GB SEND</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="button__bottom">
+      <a href="#" onclick="onoff()">Voltar</a>
+      <button type="button" class="btn-buy" href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">Buy Now</button>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div id="modal__master" class="hide">
+  <div class="content-profissional">
+    <h1>MASTER</h1>
+
+    <div class="modal__storage">
+      <img src="https://image.flaticon.com/icons/png/512/2820/2820253.png" alt="cloud storage icon"><span>2TB</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+
+    <div class="modal__users">
+      <img src="https://image.flaticon.com/icons/svg/833/833342.svg" alt="Users icon"><span>10 USERS</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="modal__send">
+      <img src="https://image.flaticon.com/icons/svg/2810/2810448.svg" alt="send up cloud storage icon"><span>20GB SEND</span>
+    </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti dignissimos repudiandae aut. Exercitationem ad, in cum modi unde doloremque porro deserunt aperiam ipsum. Est nihil atque quam, inventore neque eveniet!
+        </p>
+    
+    <div class="button__bottom">
+      <a href="#" onclick="onoff()">Voltar</a>
+      <button type="button" class="btn-buy" href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">Buy Now</button>
+    </div>
+  </div>
+</div>
+
       <script src="script.js"></script>
 </body>
 </html>
